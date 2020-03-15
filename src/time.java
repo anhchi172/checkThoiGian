@@ -32,7 +32,9 @@ public class time {
     public void setSec(int s) {
         sec = s;
     }
-
+    public boolean checkValidHour(){
+        return (hour>=0 && hour<=24);
+    }
 
     public void decreaseOne() {
         if (sec > 0) {
